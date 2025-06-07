@@ -13,7 +13,9 @@
 signed short int get_rand_s_int(void)
 {
     srand( time(NULL) );
+
     signed short int r = rand() % 2;
+
     return r;
 }
 
@@ -47,7 +49,7 @@ int main(void)
     signed short int c = *pa - convert_char_into_int(pb);
     signed short int *pc = &c;
 
-    printf("%hd\n", *pc);
+    printf("%hd\n", *pc); // 1
 
     return 0;
 }
